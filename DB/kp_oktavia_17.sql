@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 31 Okt 2020 pada 14.41
+-- Waktu pembuatan: 31 Okt 2020 pada 16.57
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.10
 
@@ -58,7 +58,7 @@ CREATE TABLE `penduduk` (
   `kecamatan` varchar(10) NOT NULL,
   `no_hp` varchar(15) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `password` enum('text','MD5') NOT NULL
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -123,11 +123,11 @@ CREATE TABLE `surat_penghasilan` (
 CREATE TABLE `user_app` (
   `username` varchar(25) NOT NULL,
   `nik_pegawai` varchar(15) NOT NULL,
-  `password` enum('text','MD6') NOT NULL,
-  `role_pegawai` enum('true','false') NOT NULL,
-  `role_pengajuan` enum('true','false') NOT NULL,
-  `role_penduduk` enum('true','fase') NOT NULL,
-  `role_user` enum('true','false') NOT NULL
+  `password` varchar(50) NOT NULL,
+  `role_pegawai` int(2) NOT NULL,
+  `role_pengajuan` int(2) NOT NULL,
+  `role_penduduk` int(2) NOT NULL,
+  `role_user` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
