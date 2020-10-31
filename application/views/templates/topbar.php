@@ -162,17 +162,35 @@
                            </a>
                            <!-- Dropdown - User Information -->
                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                               <a class="dropdown-item" href="#">
-                                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                   Profile
+                               <a class="dropdown-item" href="">
+                                   <i class="far fa-smile"></i>
+                                   <?php
+
+                                    date_default_timezone_set("Asia/Jakarta");
+                                    $jam = date("H:i:s");
+                                    $a = date("H");
+                                    if (($a >= 6) && ($a <= 10)) {
+                                        echo "<b> Selamat Pagi !! </b>";
+                                    } else if (($a >= 11) && ($a <= 14)) {
+                                        echo "<b> Selamat Siang !! </b>";
+                                    } else if (($a >= 15) && ($a <= 17)) {
+                                        echo "<b> Selamat Sore !! </b>";
+                                    } else {
+                                        echo "<b> Selamat Malam !! </b>";
+                                    } ?>
+                                   <br>
+                                   <i class="far fa-clock"></i>
+                                   <?php echo "  Pukul : <b>" . $jam . " " . "</b>";
+
+                                    ?>
                                </a>
                                <a class="dropdown-item" href="#">
-                                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                   Settings
+                                   <i class="fas fa-fw fa-user-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                                   Edit Profil
                                </a>
                                <a class="dropdown-item" href="#">
-                                   <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                   Activity Log
+                                   <i class="fas fa-fw fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
+                                   Ganti Password
                                </a>
                                <div class="dropdown-divider"></div>
                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">

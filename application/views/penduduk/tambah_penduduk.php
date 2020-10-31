@@ -89,10 +89,6 @@
                                         <label for="">Alamat :</label><br>
                                         <textarea class="form-control" name="" id="" cols="40" rows="10"></textarea>
                                     </div>
-
-
-                                    <div class="form-row col-md-6">
-                                    </div>
                                     <br><br>
 
                                     <div class="form-row col-md-12">

@@ -16,20 +16,18 @@
 
     <table class="table">
         <thead class="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">NIK</th>
-                <th scope="col">Nama</th>
-                <th scope="col">Tempat Lahir</th>
-                <th scope="col">Tanggal Lahir</th>
-                <th scope="col">Jenis Kelamin</th>
-                <th scope="col">Agama</th>
-                <th scope="col">Pekerjaan</th>
-                <th scope="col">RT</th>
-                <th scope="col">RW</th>
-                <th scope="col">Desa</th>
-                <th scope="col">Kecamatan</th>
-                <th scope="col">No HP</th>
+            <tr align="center">
+                <th scope="col" rowspan="2">No</th>
+                <th scope="col" rowspan="2">NIK</th>
+                <th scope="col" rowspan="2">Nama</th>
+                <th scope="col" rowspan="2">Tempat Lahir</th>
+                <th scope="col" rowspan="2">Tanggal Lahir</th>
+                <th scope="col" rowspan="2">Jenis Kelamin</th>
+                <th scope="col" rowspan="2">Agama</th>
+                <th scope="col" rowspan="2">Pekerjaan</th>
+                <th scope="col" rowspan="2">Alamat Lengkap</th>
+                <th scope="col" rowspan="2">No HP</th>
+                <th scope="col" colspan="2">Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -41,11 +39,10 @@
             <td>Perempuan</td>
             <td>Islam</td>
             <td>Ibu Rumah Tangga</td>
-            <td>02</td>
-            <td>11</td>
-            <td>Sinduadi</td>
-            <td>Mlati</td>
+            <td>Dusun Koma, RT 06 RW 09, Desa Titik, Kecamatan Petik, Kabupaten Bintang</td>
             <td>098765432123</td>
+            <td><button type="button" class="btn btn-success " data-anak="" data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit"></i></button></td>
+            <td><a href=""><button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button></a></td>
         </tbody>
     </table>
 

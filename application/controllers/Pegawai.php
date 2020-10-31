@@ -12,4 +12,13 @@ class Pegawai extends CI_Controller
         $this->load->view('pegawai/index', $data);
         $this->load->view('templates/footer', $data);
     }
+    public function tambah()
+    {
+        $data['title'] = 'Data Pegawai';
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pegawai/tambah_pegawai', $data);
+        $this->load->view('templates/footer', $data);
+    }
 }
