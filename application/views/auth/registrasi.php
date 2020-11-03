@@ -9,12 +9,28 @@
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Membuat Akun!</h1>
                         </div>
-                        <form class="user">
-                            <div class="form-group">
-                                <label for="">NIK</label>
-                                <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nomor NIK">
+                        <form class="user" method="post" action="<?= base_url('auth/registrasi'); ?>">
+                            <div class="form-group row">
+                                <div class="col-sm-10 mb-3 mb-sm-0">
+                                    <label for="">NIK</label>
+                                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nomor NIK">
+                                </div>
+                                <div class="col-sm-2 mb-3 mb-sm-0">
+                                    <label for=""> </label>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block" value="cari"><i class="fas fa-search fa-fw"></i></button>
+                                </div>
                             </div>
-                            <div class="form-group">
+                            <div class=" form-group">
+                                <Label>Nama</Label>
+                                <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nomor NIK">
+                                <!-- <?php foreach ($carinik as $cari) { ?> -->
+                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Alamat Email" value="<?php foreach ($carinik as $cari) {
+                                                                                                                                                        echo $cari['nik'];
+                                                                                                                                                    } ?>">
+                                <!-- <?php } ?> -->
+
+                            </div>
+                            <div class=" form-group">
                                 <Label>Email</Label>
                                 <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Alamat Email">
                             </div>

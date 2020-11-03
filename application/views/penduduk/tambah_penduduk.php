@@ -13,7 +13,7 @@
                         <div class="col-lg">
                             <div class="p-4">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Data Penduduk</h1><br>
-                                <form action="<?= base_url('') ?>" method="post">
+                                <form action="<?= base_url('penduduk/aksi_simpan') ?>" method="post">
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="">NIK :</label>
@@ -29,7 +29,7 @@
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-6">
                                             <label for="Tempat">Tempat Lahir :</label>
-                                            <input type="text" class="form-control" id="Tempat Lahir" name="tmpt_lahir" placeholder="Tempat Lahir">
+                                            <input type="text" class="form-control" id="Tempat Lahir" name="tmp_lahir" placeholder="Tempat Lahir">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="tglLahir">Tanggal Lahir :</label>
@@ -50,44 +50,44 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="">Agama :</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Agama">
+                                            <input type="text" class="form-control" id="" name="agama" placeholder="Agama">
                                         </div>
 
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-6">
                                             <label for="">Pekerjaan :</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Pekerjaan">
+                                            <input type="text" class="form-control" id="" name="pekerjaan" placeholder="Pekerjaan">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="">No Telepon :</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Nomor Telepon">
+                                            <input type="text" class="form-control" id="" name="no_hp" placeholder="Nomor Telepon">
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-6">
                                             <label for="">RT:</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Nomor RT">
+                                            <input type="text" class="form-control" id="" name="rt" placeholder="Nomor RT">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="">RW:</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Nomor RW">
+                                            <input type="text" class="form-control" id="" name="rw" placeholder="Nomor RW">
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-6">
                                             <label for="">Desa:</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Desa">
+                                            <input type="text" class="form-control" id="" name="desa" placeholder="Desa">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="">Kecamatan:</label>
-                                            <input type="text" class="form-control" id="" name="" placeholder="Kecamatan">
+                                            <input type="text" class="form-control" id="" name="kecamatan" placeholder="Kecamatan">
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
 
                                         <label for="">Alamat :</label><br>
-                                        <textarea class="form-control" name="" id="" cols="40" rows="10"></textarea>
+                                        <textarea class="form-control" name="alamat" id="" cols="40" rows="10"></textarea>
                                     </div>
                                     <br><br>
 

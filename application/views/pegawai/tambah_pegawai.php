@@ -13,17 +13,17 @@
                         <div class="col-lg">
                             <div class="p-4">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Data Pegawai</h1><br>
-                                <form action="<?= base_url('') ?>" method="post">
+                                <form action="<?= base_url('pegawai/aksi_simpan') ?>" method="post">
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="">NIK :</label>
-                                            <input type="text" class="form-control" id="nik" name="nik" placeholder="Nomor NIK">
+                                            <input type="text" class="form-control" id="nik1" name="nik_pegawai" placeholder="Nomor NIK">
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="nama">Nama :</label>
-                                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
+                                            <input type="text" class="form-control" id="nama1" name="nama" placeholder="Nama Lengkap">
                                         </div>
                                     </div>
 
@@ -31,24 +31,24 @@
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="">No Telepon :</label>
-                                            <input type="number" class="form-control" id="" name="" placeholder="Nomor Telepon">
+                                            <input type="number" class="form-control" id="" name="no_hp" placeholder="Nomor Telepon">
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="">Alamat :</label><br>
-                                            <textarea class="form-control" name="" id="" cols="10" rows="10" placeholder="Alamat Lengkap"></textarea>
+                                            <textarea class="form-control" name="alamat" id="" cols="10" rows="10" placeholder="Alamat Lengkap"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-row col-md-12">
                                         <div class="form-group col-md-12">
                                             <label for="tglLahir">Status Kerja:</label> <br>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="aktif" id="aktif" value="aktif">
+                                                <input class="form-check-input" type="radio" name="stts_kerja" id="aktif" value="aktif">
                                                 <label class="form-check-label" for="inlineRadio1">Aktif</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="keluar" id="keluar" value="keluar">
+                                                <input class="form-check-input" type="radio" name="stts_kerja" id="keluar" value="keluar">
                                                 <label class="form-check-label" for="inlineRadio2">Keluar</label>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@
                                                     <option value="Kepala Desa">Kepala Desa</option>
                                                     <option value="Wakil Kepala Desa">Wakil Kepala Desa</option>
                                                     <option value="Bendahara">Bendahara</option>
-                                                    <option value="Sekretaris">Sekretarisr</option>
+                                                    <option value="Sekretaris">Sekretaris</option>
                                                 </select>
                                             </div>
                                         </div>
